@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<title>Moses Part 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../FAITHstyle.css">
+
+<body>
+
+
+
+
+
+<div class="FaithSlidesBox">
+
+
+  <img class="mySlides" src="Moses-Part-2.png" style="width:100%">
+
+  <img class="mySlides" src="WhatTimeIsIt.png" style="width:100%">
+
+  <div class="mySlides">
+<img src="TimeToShowPicOfFaith.png" style="width:100%"/>
+  </div>
+
+  <div class="mySlides">
+    <img src="PicOfFaith.png" style="width:100%"/>
+      </div>
+
+  <img class="mySlides" src="../MySisterNamedFaith.png" style="width:100%">
+
+  <div class="mySlides">
+    <img src="WhatTimeIsIt.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="TimeToReviewAboutMoses.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <video width="100%" controls>
+          <source src="reviewaboutmoses.mp4" type="video/mp4">
+          </video>
+        </div>
+
+    <div class="mySlides">
+      <img src="WhatTimeIsIt.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="TimeToTalkAboutThe10Commandments.png" style="width:100%">
+        </div>
+  
+        <div class="mySlides">
+          <video width="100%" controls>
+            <source src="10c_1.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="mySlides">
+            <p class="h1">What is a commandment?</p>
+            </div>
+
+          <div class="mySlides">
+              <video width="100%" controls>
+                <source src="10c_2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="mySlides">
+              <img src="WhatTimeIsIt.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <p class="h1">Time to answer a question!</p>
+        </div>
+
+          <div class="mySlides">
+            <video width="100%" controls>
+              <source src="Wehave talked about love.mp4" type="video/mp4">
+              </video>
+          </div>
+
+            <div class="mySlides">
+              <img src="WhatTimeIsIt.png" style="width:100%">
+            </div>
+      
+              <div class="mySlides">
+                <img src="TimetotalkaboutwhatwelearnedaboutGod.png" style="width:100%">
+            </div>
+      
+            <div class="mySlides">
+              <video width="100%" controls>
+                <source src="2or3thingsaboutGod.mp4" type="video/mp4">
+                </video>
+            </div>
+
+  
+      
+                  <div class="mySlides">
+                    <img src="WhatTimeIsIt.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                  <img src="FunFactTime.png" style="width:100%">
+                  <video width="800" style="position: absolute; right: 150px; top: 300px;" controls>
+                    <source src="DidYouKnow.mp4" type="video/mp4">
+                    </video>
+              </div>
+
+              <div class="mySlides">
+                <img src="../MySisterNamedFaith.png" style="width:100%">
+            </div>
+  
+
+</div>
+
+
+
+
+
+<button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="button-right" onclick="plusDivs(1)">&#10095;</button>
+
+
+
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>

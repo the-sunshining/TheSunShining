@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slides For Our Show</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="FAITHstyle.css">
+    <link rel="icon" 
+          type="image/png" 
+          href="MySisterNamedFaith.png">
+</head>
+
+<body>
+    <div class="FaithSlidesBox">
+
+
+<div class="mySlides">
+        <img src="MySisterNamedFaith.png" style="width:100%">
+</div>
+
+<div class="mySlides">
+    <p class="h1">Slides For Our Show!</p>
+</div>
+
+<div class="mySlides">
+    <p class="h2">Html Slides we have created so far!</p>
+    <p class="wholep">
+        <a href="David/David.html">David</a> 
+        <br/>
+        <a href="Moses/Moses2.html">Moses Part 2</a>
+    </p>
+</div>
+
+<div class="mySlides">
+    <img src="MySisterNamedFaith.png" style="width:100%">
+</div>
+
+<div class="mySlides">
+<img src="MySisterNamedFaith.png" style="width:100%">
+</div>
+      
+      </div>
+      
+      
+      
+      
+      
+      <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="button-right" onclick="plusDivs(1)">&#10095;</button>
+      
+      
+      
+      
+      
+      
+      
+      
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
+
+    
+</body>
+</html>
