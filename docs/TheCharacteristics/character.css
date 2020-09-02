@@ -4,3 +4,213 @@ font-family: 'Playfair Display', serif;
 font-family: 'Montserrat', sans-serif;
 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+/* Theme */
+:root {
+    --mainColor1: #ffff00;
+    --mainColor2:  rgb(0, 255, 0);
+    --mainColor3: #ffffff;
+    --mainColor4: rgb(255, 101, 101);
+    --mainColor5: rgb(0, 238, 255);
+}
+
+
+
+
+
+/* Main */
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    background-color: var(--mainColor4);
+    animation-name: bodyback;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+img {
+    width: 100%;
+}
+
+header {
+  margin-top: 0px;
+    min-height: 100vh;
+    text-align: center;
+    min-width: 95vw;
+    background-color: var(--mainColor4);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header_h1 {
+position: absolute;
+top: 20%;
+left:25%;
+right: 25%;
+padding: 30px;
+animation: headerAN;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+}
+
+
+button {
+font-size: 20px;
+padding: 10px;
+border-radius: 20px;
+}
+button:hover {
+  animation-name: buttonAN;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+
+/* Main Layout */
+section {
+  position: relative;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: var(--mainColor3);
+}
+div {
+  padding: 20px;
+}
+.left_half {
+    float: left;
+    width: 45%;
+  }
+  .right_half {
+    float: right;
+    width: 45%;
+  }
+
+
+  
+footer {
+  background-color: var(--mainColor5);
+  position: relative;
+  min-height: 100vh;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+  overflow: hidden;
+  color: var(--mainColor3);
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* Animations */
+@keyframes bodyback {
+    0% {background-color: var(--mainColor1);}
+    25% {background-color: var(--mainColor4);}
+    50% {background-color: var(--mainColor3)}
+    75% {background-color: var(--mainColor4);}
+    100% {background-color: var(--mainColor1);}
+    }
+    @keyframes headerAN {
+        0% {border: 5px solid var(--mainColor2); color: var(--mainColor1);}
+        25% {border: 5px solid greenyellow; color: brown;}
+        50% {border: 5px solid green; color: orange;}
+        75% {border: 5px solid red; color: purple;}
+        100% {border: 5px solid var(--mainColor2); color: var(--mainColor1);}
+      }
+
+      @keyframes buttonAN {
+        0% {background-color: var(--mainColor1);}
+        25% {background-color: var(--mainColor4);}
+        50% {background-color: var(--mainColor1);}
+        75% {background-color: var(--mainColor4);}
+        100% {background-color: var(--mainColor1);}
+        }
+        
+
+
+
+
+/* Borders or Dividers: */
+
+  /* Solid border */
+  hr.solid {
+    border-top: 10px solid var(--mainColor1);
+    margin: 0%;
+    border-radius: 10px;
+  }
+  
+
+
+
+
+
+
+
+
+  /* ScrollBar Style! */
+ 
+  ::-webkit-scrollbar {
+    width: 16px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--mainColor4);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--mainColor1);
+    box-shadow: 0 -100vh 0 100vh var(--mainColor2), 0 0 15px 5px black;
+    border-radius: 20px;
+  }
+
+  /*
+  @keyframes for_Scrol_and_Body {
+    0% { }
+    50% {}
+    100% {}
+  }
+  */
+
+
+
+
+  /* The Characteristics home page RealChristians */
+  .RealChristians {
+    position: relative;
+    min-height: 50vh;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 25px;
+    background-image: url('IMG/Real_Christians/Real-Christians-forgive.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: RealChristiansAnimation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes RealChristiansAnimation {
+      0% { background-image: url('IMG/Real_Christians/Real-Christians-forgive.jpg');}
+      25% { background-image: url('IMG/Real_Christians/Real-Christians-love.jpg');}
+      75% { background-image: url('IMG/Real_Christians/Real-Christians-obey.jpg');}
+      100% { background-image: url('IMG/Real_Christians/Real-Christians-forgive.jpg');}
+  }
