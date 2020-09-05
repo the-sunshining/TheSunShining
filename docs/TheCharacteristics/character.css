@@ -214,3 +214,17 @@ footer {
       75% { background-image: url('IMG/Real_Christians/Real-Christians-obey.jpg');}
       100% { background-image: url('IMG/Real_Christians/Real-Christians-forgive.jpg');}
   }
+
+
+
+
+
+
+
+  /* Speacial Speech Style */
+
+  .S_V_IMG {
+    width: 30%;
+    float: left;
+    margin: 10px;
+  }
