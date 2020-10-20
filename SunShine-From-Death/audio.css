@@ -1,0 +1,64 @@
+/* Special Style for audio*/
+audio:hover, audio:focus, audio:active
+{
+-webkit-box-shadow: 15px 15px 20px #cc5e58;
+-moz-box-shadow: 15px 15px 20px #cc5e58;
+box-shadow: 15px 15px 20px #cc5e58;
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+transform: scale(1.05);
+}
+
+
+audio
+{
+-webkit-transition:all 0.5s linear;
+-moz-transition:all 0.5s linear;
+-o-transition:all 0.5s linear;
+transition:all 0.5s linear;
+-moz-box-shadow: 2px 2px 4px 0px #cfb990;
+-webkit-box-shadow:  2px 2px 4px 0px #cfb990;
+box-shadow: 2px 2px 4px 0px #cfb990;
+-moz-border-radius:7px 7px 7px 7px ;
+-webkit-border-radius:7px 7px 7px 7px ;
+border-radius:0px 0px 0px 0px ;
+}
+
+
+/*
+.CD_cover {
+    background-image: url('IMG/CD_cover/01.png');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    animation-name: CD_one;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    margin-top: var(--Spacer_h);
+}
+
+@keyframes CD_one{
+    0% {background-image: url('IMG/CD_cover/01.png');}
+    25% {background-image: url('IMG/CD_cover/02.png');}
+    50% {background-image: url('IMG/CD_cover/03.png');}
+    75% {background-image: url('IMG/CD_cover/04.png'); }
+    100% {background-image: url('IMG/CD_cover/01.png');}
+    }
+
+    :root {
+        --Spacer_h: 0px;
+    }
+
+audio#A00:hover {
+    --Spacer_h: 50px;
+}
+audio:nth-of-type(2) {
+    
+}
+audio:nth-of-type(3):hover {
+    
+}
+audio:hover {
+    --Spacer_h: 50px;  
+}
+*/

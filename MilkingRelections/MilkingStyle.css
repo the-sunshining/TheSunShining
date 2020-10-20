@@ -1,0 +1,215 @@
+
+body {
+background-color: RGB(216, 234, 210);
+padding: 1in;
+}
+h1 {
+   font-family: Arial, Helvetica, sans-serif;
+}
+.Title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px; 
+color: RGB(119, 63, 4);
+}
+.Subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px; 
+color: RGB(127, 96, 1);
+}
+.Author {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 72px;
+    color: RGB(254, 2, 1);
+}
+.Part {
+    font-weight: normal;
+    text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 52px;
+}
+.PartSubtitle {
+    font-weight: normal;
+    text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+color: gray;
+font-size: 20px;
+}
+.Introduction {
+  text-indent: 30px;
+  background-color: white;
+  padding: 20px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  border-radius: 25px;
+}
+.reflection {
+    text-indent: 30px;
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    border-radius: 25px;
+    float: right; 
+    width: 47%;
+}
+.reflectionTitle {
+    font-weight: normal;
+    font-size: 28px;
+}
+.share {
+    background-color: rgb(252, 253, 167);
+    padding: 20px;
+    border: 5px double red;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+
+.MilkVerse {
+  width: 10%;
+  float: left;
+  margin: 10px;
+}
+.MilkVerse:hover {
+  animation-name: MilkVerse;
+  animation-duration: 3s;
+  width: 50%;
+}
+@keyframes MilkVerse {
+  from {width: 10%;}
+  to {width: 50%;}
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: greenyellow;
+}
+button:hover {
+  background-color: green;
+}
+
+
+footer {
+  text-indent: 30px;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  border-radius: 25px;
+  border: 5px dotted gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.Thanks_Hid_Show {
+
+}
+.Thanks_Hid {
+
+}
+
+@keyframes 
+*/
+
+/*Special Faith Stuff*/
+:root {
+  --display-none: none;
+  --display-show: block;
+}
+.Faith_IMG_Box:hover {
+  --display-none: block;
+  --display-show: none;
+}
+.Faith1 {
+  display: var(--display-show);
+}
+.Faith2 {
+  display: var(--display-none);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Borders or Dividers: */
+
+/* Dashed border */
+hr.dashed {
+    border-top: 3px dashed #bbb;
+  }
+  
+  /* Dotted border */
+  hr.dotted {
+    border-top: 3px dotted #bbb;
+  }
+  
+  /* Solid border */
+  hr.solid {
+    border-top: 3px solid #bbb;
+    width: 100%;
+  }
+  
+  /* Rounded border */
+  hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ScrollBar Style! */
+  :root {
+    --shadow: #43a047;
+    --scrollbarBG: #eee;
+    --thumbBG: #66bb6a;
+  }
+  ::-webkit-scrollbar {
+    width: 16px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    box-shadow: 0 -100vh 0 100vh var(--shadow), 0 0 15px 5px black;
+  }

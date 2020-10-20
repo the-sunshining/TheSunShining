@@ -1,0 +1,186 @@
+
+
+
+:root {
+  --Main-c_one: #cfb990;
+  --Main-c_two: #cc5e58;
+  --Main-c_three: #4a494e;
+}
+body {
+background-image: linear-gradient(#cfb990, #cc5e58, #4a494e, #060907);
+padding: 1in;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+}
+h1 {
+   font-family: Arial, Helvetica, sans-serif;
+}
+img {
+  width: 100%;
+}
+.Title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px; 
+color: red;
+text-align: center;
+}
+.BGcY {
+    background-color: yellow;
+}
+.BGcB {
+    background-color: black;
+}
+
+.Author {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-emphasis: none;
+    font-size: 72px;
+    color: RGB(254, 2, 1);
+}
+
+.book_cover {
+  padding: 20px;
+}
+
+.Part {
+  background-color: white;
+  padding: 20px;
+  margin: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-indent: 10px;
+  overflow: hidden;
+}
+.half {
+  width: 50%;
+}
+.left_half {
+  float: left;
+  width: 45%;
+}
+.right_half {
+  float: right;
+  width: 45%;
+}
+
+
+
+
+
+
+
+.share {
+  background-color: var(--Main-c_one);
+  padding: 20px;
+  border-radius: 20px;
+  border: 4px dotted var(--Main-c_two);
+}
+
+
+
+
+
+
+.BackCover {
+  background-color: red;
+  overflow: hidden;
+  padding: 20px;
+}
+
+
+
+
+
+button {
+  background-color: var(--Main-c_one);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+button:hover {
+  background-color: var(--Main-c_two);
+}
+
+
+
+
+
+
+
+/* Borders or Dividers: */
+
+/* Dashed border */
+hr.dashed {
+    border-top: 3px dashed #bbb;
+  }
+  
+  /* Dotted border */
+  hr.dotted {
+    border-top: 3px dotted #bbb;
+  }
+  
+  /* Solid border */
+  hr.solid {
+    border-top: 3px solid #bbb;
+    width: 100%;
+  }
+  
+  /* Rounded border */
+  hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ScrollBar Style! */
+  :root {
+    --shadow: #cfb990;
+    --scrollbarBG: #cc5e58;
+    --thumbBG: #4a494e;
+  }
+  ::-webkit-scrollbar {
+    width: 16px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    box-shadow: 0 -100vh 0 100vh var(--shadow), 0 0 15px 5px black;
+  }
+
+
+
+
+  /* My Own Animations */
+
+  
+
+  /*
+  .You_Can_Read_Sample {
+animation-name: You_Can_Read_Sample;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-delay: 5s;
+  }
+  @keyframes You_Can_Read_Sample {
+    from {transform: translate(100%);}
+    to {transform: translate(-100%);}
+  }
+*/

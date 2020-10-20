@@ -1,0 +1,144 @@
+:root {
+    --mainColor1: #01dce4;
+    --mainColor2: #303032;
+    --mainColor3: #ffffff;
+    --mainColor4: #bdc5d2;
+    --manColor5: #ff0000;
+    --mainColor6: #8991a3;
+}
+.BG_c_D {
+    background-color: var(--mainColor2);
+    color: white;
+}
+.BG_c_White {
+  background-color: white;
+}
+.BG_c_Red {
+  background-color: var(--manColor5);
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    background-color: var(--mainColor6);
+}
+header {
+  margin-top: 0px;
+    min-height: 100vh;
+    text-align: center;
+    min-width: 95vw;
+    background-image: url('IMG/Hill_Cem_1.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header_h1 {
+position: absolute;
+top: 20%;
+left:25%;
+right: 25%;
+border: 5px solid var(--mainColor2);
+padding: 30px;
+font-size: 80px;
+
+}
+section {
+  position: relative;
+    min-height: 100vh;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow: hidden;
+}
+div {
+  padding: 20px;
+}
+.left_half {
+    float: left;
+    width: 45%;
+  }
+  .right_half {
+    float: right;
+    width: 45%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 500px;
+  }
+  .img_gall {
+    overflow: hidden;
+  }
+  .img_gall_1 {
+    float: left;
+    width: 25%;
+    border: 3px solid var(--mainColor2);
+    margin: 20px;
+  }
+  .img_gall_2 {
+    float: left;
+    width: 30%;
+    margin: 20px;
+  }
+  .img_gall_3 {
+    float: left;
+    width: 20%;
+    margin: 20px;
+    opacity: 0.5;
+  }
+  .img_gall_3:hover {
+    opacity: 1;
+  }
+
+
+
+
+
+
+footer {
+  padding: 20px;
+}
+
+
+
+
+
+
+/* Borders or Dividers: */
+
+/* Dashed border */
+hr.dashed {
+    border-top: 3px dashed #bbb;
+  }
+  
+  /* Dotted border */
+  hr.dotted {
+    border-top: 3px dotted #bbb;
+  }
+  
+  /* Solid border */
+  hr.solid {
+    border-top: 3px solid #bbb;
+  }
+  
+  /* Rounded border */
+  hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+  }
+
+
+  /* ScrollBar Style! */
+ 
+  ::-webkit-scrollbar {
+    width: 16px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--mainColor4);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--mainColor1);
+    box-shadow: 0 -100vh 0 100vh var(--mainColor2), 0 0 15px 5px black;
+  }

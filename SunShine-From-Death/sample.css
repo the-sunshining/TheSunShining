@@ -1,0 +1,12 @@
+:root {
+    --Main-c_one: #cfb990;
+    --Main-c_two: #cc5e58;
+    --Main-c_three: #4a494e;
+  }
+section {
+background-color: var(--Main-c_one);
+position: relative;
+min-height: 100vh;
+overflow: hidden;
+padding: 20px;
+}
