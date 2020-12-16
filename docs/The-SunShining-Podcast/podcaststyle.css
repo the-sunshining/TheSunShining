@@ -1,0 +1,362 @@
+:root {
+    --mainColor1: #ffff00;
+    --mainColor2: #a6a6a6;
+    --mainColor3: #ffffff;
+    --mainColor4: #6c7003;
+    --mainColor5: rgba(0, 0, 0, 0.725);
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/*
+font-family: 'Abril Fatface', cursive;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+
+
+
+
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    background-color: var(--mainColor4);
+    animation-name: bodyback;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes bodyback {
+  0% {background-color: var(--mainColor1);}
+  25% {background-color: var(--mainColor4);}
+  50% {background-color: red;}
+  75% {background-color: var(--mainColor4);}
+  100% {background-color: var(--mainColor1);}
+  }
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: lighter;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+header {
+  margin-top: 0px;
+    text-align: center;
+    min-width: 95vw;
+    background-image: url("IMG/sun_photo.jpg");
+    background-color: var(--mainColor4);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.header_h1 {
+color: yellow;
+background-color: rgba(255, 0, 0, 0.777);
+/* animation: headerAN;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+*/
+}
+@keyframes headerAN {
+  0% {border: 5px solid var(--mainColor2); color: var(--mainColor1);}
+  25% {border: 5px solid greenyellow; color: red;}
+  50% {border: 5px solid green; color: orange;}
+  75% {border: 5px solid red; color: purple;}
+  100% {border: 5px solid var(--mainColor2); color: var(--mainColor1);}
+}
+
+
+
+
+/* Nav */
+ .nav_contain {
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   height: 50px;
+   /*
+   background-color: #ffff00;
+   border: 1px solid black;
+   */
+ }
+nav {
+  display: none;
+}
+
+/*3 bar */
+.bar_container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+  padding: 0px;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+font-size: 20px;
+padding: 10px;
+border-radius: 20px;
+}
+button:hover {
+  animation-name: buttonAN;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes buttonAN {
+0% {background-color: var(--mainColor1);}
+25% {background-color: var(--mainColor4);}
+50% {background-color: var(--mainColor1);}
+75% {background-color: var(--mainColor4);}
+100% {background-color: var(--mainColor1);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+  position: relative;
+    min-height: 100px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+div {
+  padding: 20px;
+}
+.left_half {
+    float: left;
+    width: 45%;
+  }
+  .right_half {
+    float: right;
+    width: 45%;
+  }
+
+.ShareBox, .Special {
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  background-color: var(--mainColor5);
+  position: relative;
+    min-height: 100px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 25px;
+  color: var(--mainColor3);
+}
+
+/*
+#footerIMG{
+min-width: 100%;
+min-height: 500px;
+background-position: center;
+background-size: cover;
+animation-name: footerIMGan;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+@keyframes footerIMGan {
+  0%   {background-image: url("IMG/the-sunshining-podcast_logo.png");}
+  25% {background-image: url("IMG/SunLogo.png");}
+  50%   {background-image: url("IMG/the-sunshining-podcast_logo.png");}
+  75% {background-image: url("IMG/SunLogo.png");}
+  100% {background-image: url("IMG/the-sunshining-podcast_logo.png");}
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* Borders or Dividers: */
+
+  /* Solid border */
+  hr.solid {
+    border-top: 5px solid #bbb;
+    margin: 0%;
+    display: none;
+  }
+  
+
+
+
+
+
+
+
+
+  /* ScrollBar Style! */
+ 
+  ::-webkit-scrollbar {
+    width: 16px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--mainColor4);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--mainColor1);
+    box-shadow: 0 -100vh 0 100vh var(--mainColor2), 0 0 15px 5px black;
+    border-radius: 20px;
+  }
+
+  /*
+  @keyframes for_Scrol_and_Body {
+    0% { }
+    50% {}
+    100% {}
+  }
+  */
+
+
+
+
+
+
+  #BG_Main {
+    background-color: #6c7003;
+  }
+  
+  #Intro {
+    background-color: var(--mainColor3);
+  }
+  
+  #E01 {
+  background-color: rgb(43, 244, 251);
+  }
+  #E02 {
+    background-color: var(--mainColor1);
+  }
+  #E03 {
+    background-color: var(--mainColor4);
+  }
+  #E04 {
+    background-color: var(--mainColor2);
+  }
+  #E05 {
+    background-color: var(--mainColor5);
+    color: white;
+  }
+  #E06 {
+    background-color: var(--mainColor3);
+  }
+  #E07 {
+    background-color: var(--mainColor1);
+  }
+  #E08 {
+    background-color: var(--mainColor4);
+  }
+  #E09 {
+    background-color: var(--mainColor2);
+  }
+  #E10 {
+    background-color: var(--mainColor5);
+    color: white;
+  }
+  #E11 {
+    background-color: var(--mainColor3);
+  }
+  #E12 {
+    background-color: var(--mainColor1);
+  }
