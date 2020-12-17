@@ -24,18 +24,10 @@ body {
     padding: 0px;
     margin: 0px;
     font-size: 20px;
-    background-color: var(--mainColor4);
-    animation-name: bodyback;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+    background: url(https://the-sunshining.github.io/sunshining-photography/img/sun_01.jpg) no-repeat center center fixed; 
+    background-size: cover;
 }
-@keyframes bodyback {
-  0% {background-color: var(--mainColor1);}
-  25% {background-color: var(--mainColor4);}
-  50% {background-color: red;}
-  75% {background-color: var(--mainColor4);}
-  100% {background-color: var(--mainColor1);}
-  }
+
 h1 {
   font-family: 'Abril Fatface', cursive;
   font-weight: lighter;
@@ -57,10 +49,7 @@ header {
   margin-top: 0px;
     text-align: center;
     min-width: 95vw;
-    background-image: url("IMG/sun_photo.jpg");
-    background-color: var(--mainColor4);
-    background-position: center;
-    background-size: cover;
+
     position: relative;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -82,55 +71,6 @@ animation-duration: 5s;
 }
 
 
-
-
-/* Nav */
- .nav_contain {
-   position: fixed;
-   top: 0px;
-   left: 0px;
-   right: 0px;
-   height: 50px;
-   /*
-   background-color: #ffff00;
-   border: 1px solid black;
-   */
- }
-nav {
-  display: none;
-}
-
-/*3 bar */
-.bar_container {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-  padding: 0px;
-}
-
-/* Rotate first bar */
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-  transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-/* Fade out the second bar */
-.change .bar2 {
-  opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-  transform: rotate(45deg) translate(-8px, -8px) ;
-}
 
 
 
@@ -185,6 +125,12 @@ section {
     margin: 20px;
     overflow: hidden;
     border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.777);
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+section:hover {
+background-color: white;
 }
 div {
   padding: 20px;
@@ -239,25 +185,7 @@ footer {
   color: var(--mainColor3);
 }
 
-/*
-#footerIMG{
-min-width: 100%;
-min-height: 500px;
-background-position: center;
-background-size: cover;
-animation-name: footerIMGan;
-animation-duration: 5s;
-animation-iteration-count: infinite;
-}
-@keyframes footerIMGan {
-  0%   {background-image: url("IMG/the-sunshining-podcast_logo.png");}
-  25% {background-image: url("IMG/SunLogo.png");}
-  50%   {background-image: url("IMG/the-sunshining-podcast_logo.png");}
-  75% {background-image: url("IMG/SunLogo.png");}
-  100% {background-image: url("IMG/the-sunshining-podcast_logo.png");}
-}
 
-*/
 
 
 
@@ -272,12 +200,13 @@ animation-iteration-count: infinite;
 
 /* Borders or Dividers: */
 
-  /* Solid border */
-  hr.solid {
-    border-top: 5px solid #bbb;
-    margin: 0%;
-    display: none;
-  }
+ /* Rounded border */
+ hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+  max-width: 100%;
+  width: 90%;
+}
   
 
 
@@ -301,62 +230,12 @@ animation-iteration-count: infinite;
     border-radius: 20px;
   }
 
-  /*
-  @keyframes for_Scrol_and_Body {
-    0% { }
-    50% {}
-    100% {}
-  }
-  */
 
 
-
-
-
-
-  #BG_Main {
-    background-color: #6c7003;
-  }
-  
-  #Intro {
-    background-color: var(--mainColor3);
-  }
-  
-  #E01 {
-  background-color: rgb(43, 244, 251);
-  }
-  #E02 {
-    background-color: var(--mainColor1);
-  }
-  #E03 {
-    background-color: var(--mainColor4);
-  }
-  #E04 {
-    background-color: var(--mainColor2);
-  }
-  #E05 {
-    background-color: var(--mainColor5);
-    color: white;
-  }
-  #E06 {
-    background-color: var(--mainColor3);
-  }
-  #E07 {
-    background-color: var(--mainColor1);
-  }
-  #E08 {
-    background-color: var(--mainColor4);
-  }
-  #E09 {
-    background-color: var(--mainColor2);
-  }
-  #E10 {
-    background-color: var(--mainColor5);
-    color: white;
-  }
-  #E11 {
-    background-color: var(--mainColor3);
-  }
-  #E12 {
-    background-color: var(--mainColor1);
+  .Prev-and-Upcoming {
+    width: 20%;
+    min-height: 300px;
+    background-color: wheat;
+    float: left;
+    border: 3px solid yellow;
   }
