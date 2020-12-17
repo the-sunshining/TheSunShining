@@ -128,12 +128,12 @@ section {
     margin: 20px;
     overflow: hidden;
     border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.777);
+    background-color: rgba(255, 255, 255, 0.555);
     border-left: 3px solid black;
     border-right: 3px solid black;
 }
 section:hover {
-background-color: white;
+background-color: rgba(255, 255, 255, 0.777);
 }
 div {
   padding: 20px;
